@@ -1,0 +1,95 @@
+.chat {
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat .chat__header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+
+.chat__headerInfo {
+    flex: 1;
+    padding: 10px;
+}
+
+.chat__headerInfo h3 {
+    font-size: 16px;
+}
+
+.chat__headerInfo p {
+    font-size: 12x;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__right svg {
+    font-size: 18px;
+}
+
+.chat__body {
+    background-image: url('https://res.cloudinary.com/practicaldev/image/fetch/s--WAKqnINn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tw0nawnvo0zpgm5nx4fp.png');
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    padding: 25px 10px;
+}
+
+.chat__body .chat__message {
+    position: relative;
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.chat__name {
+    position: absolute;
+    top: -18px;
+    left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.chat__time {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.chat__receiver {
+    background-color: rgb(126, 164, 133) !important;
+    margin-left: auto;
+}
+
+.chat__footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.chat__footer svg {
+    padding: 10px;
+}
+
+.chat__footer form {
+    flex: 1
+}
+
+.chat__footer form input[type='text'] {
+    border: 0;
+    height: 40px;
+    width: 260px;
+    border-radius: 12px;
+}
+
+.chat__footer form input[type='submit'] {
+    display: none;
+}
